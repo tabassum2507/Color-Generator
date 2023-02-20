@@ -3,8 +3,9 @@ import rgbToHex from './utils'
 
 const SingleColor = ({rgb, weight, index}) => {
     const[alert, setAlert] = useState(false)
+    const bcg = rgb.join(',')
   return (
-    <h3>SingleColor</h3>
+    <article className={`color`} style={{backgroundColor: `rgb(${bcg})`}}>{' '}</article>
   )
 }
 
